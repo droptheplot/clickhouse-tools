@@ -1,14 +1,17 @@
 # clickhouse-tools
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/droptheplot/clickhouse-tools)](https://goreportcard.com/report/github.com/droptheplot/clickhouse-tools)
 [![Test](https://github.com/droptheplot/clickhouse-tools/actions/workflows/test.yml/badge.svg)](https://github.com/droptheplot/clickhouse-tools/actions/workflows/test.yml)
 [![Release](https://github.com/droptheplot/clickhouse-tools/actions/workflows/release.yml/badge.svg)](https://github.com/droptheplot/clickhouse-tools/actions/workflows/release.yml)
 
-Dump Clickhouse schema.
+Different tools for ClickHouse.
 
 ## Usage
 
+### Dump
+
 ```shell
-clickhouse-tools \
+clickhouse-tools dump \
   --orig=database1 \
   --dest=database2 \
   --url=https://path.to.clickhouse:8443 \
@@ -17,7 +20,7 @@ clickhouse-tools \
   --cert=path.to.certificate.crt \
   --on-cluster \
   --drop-table \
-  > schema.sql \
+  > schema.sql
 ```
 
 ## Download
